@@ -3,3 +3,22 @@
   justify-content: center;
   align-items: center;
 }
+.navBtn {
+  font-size: 5vw;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1080px) {
+  .navBtn {
+    font-size: 6vw;
+    padding-bottom: 10px;
+  }
+}
+
+.modalPreview {
+  min-width: 60vw;
+  min-height: 40vh;
+}
+.modalPreview .ant-modal-content {
+  padding: 10px 0px !important;
+}

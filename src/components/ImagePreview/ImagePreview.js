@@ -12,6 +12,21 @@ const ImagePreview = (props) => {
     setIsFullscreen(isFullScreen);
   };
 
+  const handleLeft = () => {
+    if (startIndex - 1 < 0) {
+      setPreviewImageIdx(galleryData.length - 1);
+    } else {
+      setPreviewImageIdx(startIndex - 1);
+    }
+  };
+  const handleRight = () => {
+    if (startIndex + 1 > galleryData.length - 1) {
+      setPreviewImageIdx(0);
+    } else {
+      setPreviewImageIdx(startIndex + 1);
+    }
+  };
+
   return (
     <Modal
       open={startIndex !== null}
@@ -19,16 +34,13 @@ const ImagePreview = (props) => {
       closable={false}
       maskClosable
       onCancel={() => setPreviewImageIdx(null)}
-      style={{ minHeight: "40vh", minWidth: "60vw" }}
+      className="modalPreview"
     >
       <Row align="bottom">
-        <Col span={3} className="center">
-          <LeftOutlined
-            style={{ fontSize: "50px", paddingBottom: "10px" }}
-            onClick={() => setPreviewImageIdx(startIndex - 1)}
-          />
+        <Col xs={2} sm={2} md={2} className="center">
+          <LeftOutlined className="navBtn" onClick={handleLeft} />
         </Col>
-        <Col span={18}>
+        <Col xs={20} sm={20} md={20}>
           <ImageGallery
             items={galleryData}
             showPlayButton={false}
@@ -41,11 +53,8 @@ const ImagePreview = (props) => {
             onScreenChange={handleScreenChange}
           />
         </Col>
-        <Col span={3} className="center">
-          <RightOutlined
-            style={{ fontSize: "50px", paddingBottom: "10px" }}
-            onClick={() => setPreviewImageIdx(startIndex + 1)}
-          />
+        <Col xs={2} sm={2} md={2} className="center">
+          <RightOutlined className="navBtn" onClick={handleRight} />
         </Col>
       </Row>
     </Modal>

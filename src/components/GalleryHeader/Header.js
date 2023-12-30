@@ -1,6 +1,6 @@
 import { Col, Flex, Typography } from "antd";
 import React from "react";
-import CustomButton from "../../../components/Button/Button";
+import CustomButton from "../Button/Button";
 
 const Header = (props) => {
   const { Title, Paragraph } = Typography;
