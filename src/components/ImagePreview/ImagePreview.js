@@ -4,7 +4,7 @@ import { Col, Modal, Row } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "./index.css";
 
-const ImagePreview = (props) => {
+export const ImagePreview = (props) => {
   const { startIndex, setPreviewImageIdx, galleryData } = props;
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -60,5 +60,3 @@ const ImagePreview = (props) => {
     </Modal>
   );
 };
-
-export default ImagePreview;

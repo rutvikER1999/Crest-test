@@ -1,8 +1,8 @@
 import { Col, Flex, Typography } from "antd";
 import React from "react";
-import CustomButton from "../Button/Button";
+import { CustomButton } from "../../components";
 
-const Header = (props) => {
+export const Header = (props) => {
   const { Title, Paragraph } = Typography;
   const {
     title,
@@ -31,5 +31,3 @@ const Header = (props) => {
     </Col>
   );
 };
-
-export default Header;

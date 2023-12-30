@@ -2,7 +2,7 @@ import { Button } from "antd";
 import React from "react";
 import "./index.css";
 
-const CustomButton = (props) => {
+export const CustomButton = (props) => {
   const { title, onClick, selected } = props;
   return (
     <Button
@@ -14,5 +14,3 @@ const CustomButton = (props) => {
     </Button>
   );
 };
-
-export default CustomButton;
