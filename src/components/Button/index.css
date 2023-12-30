@@ -1,0 +1,27 @@
+.selected-btn {
+  background-color: #4da871;
+  border-radius: 20px;
+  border: 2px solid #4da871;
+  color: white;
+}
+
+.btn {
+  border-radius: 20px;
+  border: 2px solid #4da871;
+  color: black;
+  background-color: white;
+}
+
+.selected-btn:hover {
+  background-color: #4da871 !important;
+  border-radius: 20px;
+  border: 2px solid #4da871;
+  color: white !important;
+}
+
+.btn:hover {
+  border-radius: 20px;
+  border: 2px solid #4da871;
+  background-color: #4da871 !important;
+  color: white !important;
+}

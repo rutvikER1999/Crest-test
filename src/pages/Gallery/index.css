@@ -1,0 +1,15 @@
+.gallery-container {
+  margin: 0px !important;
+  background-color: #eff0f4;
+  min-height: 100vh;
+  min-width: 98vw;
+  overflow: hidden;
+}
+.gallery-container .gallery-header {
+  text-align: center;
+}
+.gallery-container .image-container .gallery-image:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
