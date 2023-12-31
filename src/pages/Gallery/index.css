@@ -4,6 +4,7 @@
   min-height: 100vh;
   min-width: 98vw;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 .gallery-container .gallery-header {
   text-align: center;
